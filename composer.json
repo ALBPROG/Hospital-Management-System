@@ -1,19 +1,28 @@
 {
-	"name": "heroku/heroku-buildpack-php",
-	"description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
-	"keywords": ["heroku", "foreman", "php", "hhvm", "apache", "apache2", "nginx"],
-	"type": "library",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Olti Asllanaj",
-			"email": "oltias1987@gmail.com"
-		}
-	],
-	"bin": [
-		"bin/heroku-hhvm-apache2",
-		"bin/heroku-hhvm-nginx",
-		"bin/heroku-php-apache2",
-		"bin/heroku-php-nginx"
-	]
+    "require": {
+        "php": ">=5.3.0",
+        "silex/silex": "~1.0@dev",
+        "chh/cache-service-provider": "~1.0",
+        "ext-libevent": "*",
+        "ext-curl": "*",
+        "ext-sundown": "*"
+    },
+    "extra": {
+        "heroku": {
+            "document-root": "web",
+            "index-document": "index.php",
+            "php-config": [
+                "short_open_tag=on",
+                "newrelic.appname=php-test"
+            ],
+            "engines": {
+                "php": "5.5.*",
+                "nginx": "1.4.*"
+            },
+            "compile": [
+                "echo $FOO"
+            ],
+            "newrelic": true
+        }
+    }
 }
