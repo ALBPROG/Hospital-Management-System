@@ -103,15 +103,15 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `password`, `fname`, `sname`, `type`) VALUES
-('Admin', '', 'Olti', 'Asllanaj', 'Admin'),
-('Bursar', '', 'Silva', 'Kaziu', 'Bursar'),
-('DentalDoctor', '', 'Andi', 'Rama', 'DentalDoctor'),
-('Doctor', '', 'Alba', 'Shkurti', 'Doctor'),
-('Laboratory', '', 'Akim', 'Gjata', 'Laboratory'),
-('NormalDoctor', '', 'Don', 'Wang', 'NormalDoctor'),
-('Pharmacy', '', 'Romina', 'Asllanaj', 'Pharmacy'),
-('Reception', '', 'Diana', 'Portillo', 'Reception'),
-('WomenDoctor', '', 'Joana', 'Pellumbi', 'WomenDoctor');
+('Admin', '1234', 'Olti', 'Asllanaj', 'Admin'),
+('Bursar', '1234', 'Silva', 'Kaziu', 'Bursar'),
+('DentalDoctor', '1234', 'Andi', 'Rama', 'DentalDoctor'),
+('Doctor', '1234', 'Alba', 'Shkurti', 'Doctor'),
+('Laboratory', '1234', 'Akim', 'Gjata', 'Laboratory'),
+('NormalDoctor', '1234', 'Don', 'Wang', 'NormalDoctor'),
+('Pharmacy', '1234', 'Romina', 'Asllanaj', 'Pharmacy'),
+('Reception', '1234', 'Diana', 'Portillo', 'Reception'),
+('WomenDoctor', '1234', 'Joana', 'Pellumbi', 'WomenDoctor');
 
 --
 -- Indexes for dumped tables
