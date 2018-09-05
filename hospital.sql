@@ -85,6 +85,7 @@ INSERT INTO `patient` (`id`, `fname`, `sname`, `email`, `address`, `phone`, `sex
 -- Table structure for table `rooms`
 --
 
+DROP TABLE IF EXISTS `rooms`;
 CREATE TABLE `rooms` (
   `room_no` int(11) NOT NULL,
   `room_name` varchar(100) NOT NULL,
@@ -97,6 +98,7 @@ CREATE TABLE `rooms` (
 -- Table structure for table `users`
 --
 
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
   `password` varchar(40) NOT NULL,
