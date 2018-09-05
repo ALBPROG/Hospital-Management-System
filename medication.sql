@@ -1,0 +1,1 @@
+INSERT INTO `medication`(`id`, `patient_id`, `status`, `symptoms`, `tests`, `test_results`, `medical`, `doctor_type`, `doctor_price`, `test_price`, `medical_price`, `date`, `month`, `year`) VALUES (1, 1, 'recdoctor', '', '', '', '', 'NormalDoctor', 20000, 0, 0, 1, 2, 2016);

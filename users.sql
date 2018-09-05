@@ -1,0 +1,9 @@
+INSERT INTO `users`(`username`, `password`, `fname`, `sname`, `type`) VALUES ('Admin', '1234', 'Olti', 'Asllanaj', 'Admin');
+INSERT INTO `users`(`username`, `password`, `fname`, `sname`, `type`) VALUES ('Bursar', '1234', 'Silva', 'Kaziu', 'Bursar');
+INSERT INTO `users`(`username`, `password`, `fname`, `sname`, `type`) VALUES ('DentalDoctor', '1234', 'Andi', 'Rama', 'DentalDoctor');
+INSERT INTO `users`(`username`, `password`, `fname`, `sname`, `type`) VALUES ('Doctor', '1234', 'Alba', 'Shkurti', 'Doctor');
+INSERT INTO `users`(`username`, `password`, `fname`, `sname`, `type`) VALUES ('Laboratory', '1234', 'Akim', 'Gjata', 'Laboratory');
+INSERT INTO `users`(`username`, `password`, `fname`, `sname`, `type`) VALUES ('NormalDoctor', '1234', 'Don', 'Wang', 'NormalDoctor');
+INSERT INTO `users`(`username`, `password`, `fname`, `sname`, `type`) VALUES ('Pharmacy', '1234', 'Romina', 'Asllanaj', 'Pharmacy');
+INSERT INTO `users`(`username`, `password`, `fname`, `sname`, `type`) VALUES ('Reception', '1234', 'Diana', 'Portillo', 'Reception');
+INSERT INTO `users`(`username`, `password`, `fname`, `sname`, `type`) VALUES ('WomenDoctor', '1234', 'Joana', 'Pellumbi', 'WomenDoctor');

@@ -1,0 +1,1 @@
+INSERT INTO `patient`(`id`, `fname`, `sname`, `email`, `address`, `phone`, `sex`, `bloodgroup`, `birthyear`) VALUES (1, 'Olti', 'Asllanaj', 'oltias1987@gmail.com', '8', '0654507180', 'Male', 'A', 1987);
