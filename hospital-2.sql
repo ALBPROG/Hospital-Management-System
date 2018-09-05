@@ -1,3 +1,12 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Sep 05, 2018 at 05:42 AM
+-- Server version: 10.1.25-MariaDB
+-- PHP Version: 7.1.7
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -8,6 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
+
 --
 -- Database: `hospital`
 --
@@ -17,8 +27,6 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `medication`
 --
-
-DROP TABLE IF EXISTS `medication`;
 
 CREATE TABLE `medication` (
   `id` int(11) NOT NULL,
@@ -37,21 +45,11 @@ CREATE TABLE `medication` (
   `year` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `medication`
---
-
-INSERT INTO `medication` (`id`, `patient_id`, `status`, `symptoms`, `tests`, `test_results`, `medical`, `doctor_type`, `doctor_price`, `test_price`, `medical_price`, `date`, `month`, `year`) VALUES
-(1, 1, 'recdoctor', '', '', '', '', 'NormalDoctor', 20000, 0, 0, 1, 2, 2016);
-
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `medicine`
 --
-
-
-DROP TABLE IF EXISTS `medicine`;
 
 CREATE TABLE `medicine` (
   `id` int(11) NOT NULL,
@@ -64,8 +62,6 @@ CREATE TABLE `medicine` (
 --
 -- Table structure for table `patient`
 --
-
-DROP TABLE IF EXISTS `patient`;
 
 CREATE TABLE `patient` (
   `id` int(11) NOT NULL,
@@ -92,12 +88,19 @@ INSERT INTO `patient` (`id`, `fname`, `sname`, `email`, `address`, `phone`, `sex
 -- Table structure for table `rooms`
 --
 
-DROP TABLE IF EXISTS `rooms`;
 CREATE TABLE `rooms` (
   `room_no` int(11) NOT NULL,
   `room_name` varchar(100) NOT NULL,
   `patientsinroom` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `rooms`
+--
+
+INSERT INTO `rooms` (`room_no`, `room_name`, `patientsinroom`) VALUES
+(4, 'Olti', 0),
+(5, 'John', 0);
 
 -- --------------------------------------------------------
 
@@ -105,7 +108,6 @@ CREATE TABLE `rooms` (
 -- Table structure for table `users`
 --
 
-DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
   `password` varchar(40) NOT NULL,
@@ -168,11 +170,6 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `medication`
---
-ALTER TABLE `medication`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
 -- AUTO_INCREMENT for table `medicine`
 --
 ALTER TABLE `medicine`
@@ -181,7 +178,7 @@ ALTER TABLE `medicine`
 -- AUTO_INCREMENT for table `patient`
 --
 ALTER TABLE `patient`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
