@@ -1,13 +1,15 @@
 <?php
-$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-$cleardb_server = $cleardb_url["host"];
-$cleardb_username = $cleardb_url["user"];
-$cleardb_password = $cleardb_url["pass"];
-$cleardb_db = substr($cleardb_url["path"], 1);
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
 
 $conn = new mysqli($server, $username, $password, $db);
+?>
 
+/*
 $active_group = 'default';
 $active_record = TRUE;
 
@@ -29,4 +31,4 @@ $db['default']['stricton'] = FALSE;
 
 
 
-?>
+?>*/
