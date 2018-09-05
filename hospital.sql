@@ -11,29 +11,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `medication`
 --
 
-CREATE TABLE `medication` (
-  `id` int(11) NOT NULL,
-  `patient_id` int(11) NOT NULL,
-  `status` varchar(50) NOT NULL,
-  `symptoms` longtext NOT NULL,
-  `tests` longtext NOT NULL,
-  `test_results` longtext NOT NULL,
-  `medical` longtext NOT NULL,
-  `doctor_type` varchar(20) NOT NULL,
-  `doctor_price` int(11) NOT NULL,
-  `test_price` int(11) NOT NULL,
-  `medical_price` int(11) NOT NULL,
-  `date` int(11) NOT NULL,
-  `month` int(11) NOT NULL,
-  `year` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `medication`
---
-
-INSERT INTO `medication` (`id`, `patient_id`, `status`, `symptoms`, `tests`, `test_results`, `medical`, `doctor_type`, `doctor_price`, `test_price`, `medical_price`, `date`, `month`, `year`) VALUES
-(1, 1, 'recdoctor', '', '', '', '', 'NormalDoctor', 20000, 0, 0, 1, 2, 2016);
+DROP TABLE IF EXISTS `hospital.medication`;
 
 -- --------------------------------------------------------
 
