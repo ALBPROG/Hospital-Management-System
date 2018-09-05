@@ -19,6 +19,12 @@ SET time_zone = "+00:00";
 --
 
 DROP TABLE IF EXISTS `medication`;
+DROP TABLE IF EXISTS `medicine`;
+DROP TABLE IF EXISTS `patient`;
+DROP TABLE IF EXISTS `rooms`;
+DROP TABLE IF EXISTS `users`;
+
+
 
 CREATE TABLE `medication` (
   `id` int(11) NOT NULL,
@@ -51,7 +57,7 @@ INSERT INTO `medication` (`id`, `patient_id`, `status`, `symptoms`, `tests`, `te
 --
 
 
-DROP TABLE IF EXISTS `medicine`;
+
 
 CREATE TABLE `medicine` (
   `id` int(11) NOT NULL,
@@ -65,7 +71,7 @@ CREATE TABLE `medicine` (
 -- Table structure for table `patient`
 --
 
-DROP TABLE IF EXISTS `patient`;
+
 
 CREATE TABLE `patient` (
   `id` int(11) NOT NULL,
@@ -92,7 +98,7 @@ INSERT INTO `patient` (`id`, `fname`, `sname`, `email`, `address`, `phone`, `sex
 -- Table structure for table `rooms`
 --
 
-DROP TABLE IF EXISTS `rooms`;
+
 CREATE TABLE `rooms` (
   `room_no` int(11) NOT NULL,
   `room_name` varchar(100) NOT NULL,
@@ -105,7 +111,7 @@ CREATE TABLE `rooms` (
 -- Table structure for table `users`
 --
 
-DROP TABLE IF EXISTS `users`;
+
 CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
   `password` varchar(40) NOT NULL,
