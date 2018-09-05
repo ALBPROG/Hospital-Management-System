@@ -1,5 +1,5 @@
 <?php
-/*$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 $server = $url["host"];
 $username = $url["user"];
@@ -7,7 +7,7 @@ $password = $url["pass"];
 $db = substr($url["path"], 1);
 
 $conn = new mysqli($server, $username, $password, $db);
-?>*/
+
 
 
 $active_group = 'default';
@@ -32,7 +32,7 @@ $db['default'] = array(
 'compress' => FALSE,
 'stricton' => FALSE,
 'failover' => array(),
-'save_queries' => 
+'save_queries' => TRUE
 
 );
 
