@@ -6,7 +6,7 @@ function login()
 	$username = mysqli_real_escape_string($con,$_POST['username']);
 	$password = mysqli_real_escape_string($con,$_POST['password']);
 	$pass = sha1($password);
-	$sql = "SELECT * FROM id6216490_hospital.users WHERE `username`='" . $username. "' AND `password`='" . $password  . "'";
+	$sql = "SELECT * FROM hospital.users WHERE `username`='" . $username. "' AND `password`='" . $password  . "'";
 	$query = mysqli_query($con,$sql);
 
 	$row = mysqli_num_rows($query);
@@ -82,7 +82,7 @@ function admindetails()
 	require("connect.php");
 	$type = $_SESSION['type'];
 	$username = $_SESSION['admin'];
-	$sql = "SELECT * FROM id6216490_hospital.users WHERE `username`='$username' AND `type`='$type'";
+	$sql = "SELECT * FROM hospital.users WHERE `username`='$username' AND `type`='$type'";
 	$query = mysqli_query($con, $sql);
 	while ($row =mysqli_fetch_array($query)) {
 		echo "Welcome, <i>".$row['fname']." ".$row['sname']."</i> (<a href='../logout.php'>Logout</a>)";

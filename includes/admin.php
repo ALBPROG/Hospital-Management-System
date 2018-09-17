@@ -2,7 +2,7 @@
 function users()
 {
 	require 'connect.php';
-	$sql = "SELECT * FROM hospital.users";
+	$sql = "SELECT * FROM id6216490_hospital.users";
 	$query = mysqli_query($con, $sql);
 	while ($row = mysqli_fetch_array($query)) {
 		echo "<tr height=20px'>";
