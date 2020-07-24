@@ -1,0 +1,30 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+# installed gems
+gem "byebug"
+gem "codecov", require: false
+gem "parallel_tests"
+gem "ronn", require: false
+gem "rspec"
+gem "rspec-its", require: false
+gem "rspec-retry", require: false
+gem "rspec-wait", require: false
+gem "rubocop"
+gem "simplecov", require: false
+if ENV["HOMEBREW_SORBET"]
+  gem "sorbet", "0.5.5823"
+  gem "sorbet-runtime", "0.5.5823"
+  gem "tapioca"
+end
+
+# vendored gems
+gem "activesupport"
+gem "concurrent-ruby"
+gem "mechanize"
+gem "patchelf"
+gem "plist"
+gem "rubocop-performance"
+gem "rubocop-rspec"
+gem "ruby-macho"
